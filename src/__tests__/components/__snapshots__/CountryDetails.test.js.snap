@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders CountryDetails Component correctly 1`] = `
+<ul
+  className="details__ul"
+>
+  <li
+    className="details__li"
+  >
+    <p>
+      Continent
+    </p>
+    <p>
+      Africa
+    </p>
+  </li>
+  <li
+    className="details__li"
+  >
+    <p>
+      Population
+    </p>
+    <p>
+      523464
+    </p>
+  </li>
+  <li
+    className="details__li"
+  >
+    <p>
+      Cases
+    </p>
+    <p>
+      464574
+    </p>
+  </li>
+  <li
+    className="details__li"
+  >
+    <p>
+      Critical Cases
+    </p>
+    <p>
+      32453
+    </p>
+  </li>
+  <li
+    className="details__li"
+  >
+    <p>
+      Recovered
+    </p>
+    <p>
+      423534
+    </p>
+  </li>
+  <li
+    className="details__li"
+  >
+    <p>
+      Deaths
+    </p>
+    <p>
+      2453
+    </p>
+  </li>
+</ul>
+`;

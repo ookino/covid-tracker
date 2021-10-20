@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders SummaryCard Component correctly 1`] = `
+<div
+  className="card-summary"
+>
+  <img
+    alt="globe"
+    className="card-summary__img"
+    src="globe.svg"
+  />
+  <div
+    className="card-summary__meta"
+  >
+    <p
+      className="card-summary__meta-p"
+    >
+      43564675 cases
+    </p>
+    <p
+      className="card-summary__meta-p "
+    >
+      523464
+      <span
+        className="card-summary__meta-p--recovered"
+      >
+         recovered
+      </span>
+    </p>
+    <p
+      className="card-summary__meta-p  "
+    >
+      23543
+      <span
+        className="card-summary__meta-p--deaths"
+      >
+         deaths
+      </span>
+    </p>
+  </div>
+</div>
+`;
