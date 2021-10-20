@@ -4,7 +4,7 @@
 
 > A metric web application .
 
-<!-- ![](screenshot.png) -->
+![](screenshot.png)
 
 **Additional description about the project and its features.**
 
@@ -21,9 +21,9 @@
 - React
 - Redux
 
-<!-- ## 📡 Live Demo
+## 📡 Live Demo
 
-[Link to Live Demo](https://space-travelers-hub-okinoo.netlify.app) -->
+[Link to Live Demo](http://yaseerokino.github.io/covid-tracker)
 
 ## 🧰 Tools
 
