@@ -1,0 +1,30 @@
+.details {
+  #{&}__header {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+
+    background: $dark-2;
+    color: $neutral-1;
+    padding: 3rem;
+  }
+
+  #{&}__header-img {
+    width: 8rem;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  #{&}__li {
+    @include flexbox();
+    @include justify-content(space-between);
+
+    padding: 2rem;
+    background-color: $dark-1;
+    color: $neutral-1;
+  }
+
+  #{&}__li:nth-child(odd) {
+    background-color: $dark-2;
+  }
+}

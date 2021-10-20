@@ -1,0 +1,104 @@
+.card-summary {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+
+  gap: 2rem;
+  background: $dark-2;
+  padding: 3rem;
+
+  #{&}__img {
+    width: 10rem;
+    height: auto;
+    animation: rotation 10s infinite linear;
+  }
+
+  #{&}__meta-p {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: $neutral-1;
+    font-weight: $bold;
+    font-size: 1rem;
+  }
+
+  #{&}__meta-p--recovered {
+    color: #38a169;
+  }
+
+  #{&}__meta-p--deaths {
+    color: #e53e3e;
+  }
+}
+
+.card-country {
+  #{&}__img {
+    width: 5rem;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #323232;
+  }
+
+  #{&}__ul {
+    @include flexbox();
+
+    width: 100%;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #{&}__li {
+    flex: 50% 1;
+    padding: 2rem;
+    list-style-type: none;
+    border-bottom: 1px solid #323232;
+  }
+
+  #{&}__li:nth-child(even) {
+    background-color: $dark-2;
+    border-left: 1px solid #323232;
+  }
+
+  #{&}__li:nth-child(even):hover {
+    background-color: $dark-1;
+  }
+
+  #{&}__li:nth-child(odd) {
+    background-color: $dark-1;
+  }
+
+  #{&}__li:nth-child(odd):hover {
+    background-color: $dark-2;
+  }
+
+  #{&}__a {
+    text-decoration: none;
+    color: $neutral-1;
+  }
+}
+
+.filter {
+  @include flexbox();
+
+  background: $dark-1;
+  padding: 1rem;
+  border-bottom: 1px solid #323232;
+  border-top: 1px solid #323232;
+
+  input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: $dark-2;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
