@@ -23,7 +23,7 @@
 
 ## 📡 Live Demo
 
-[Link to Live Demo](http://yaseerokino.github.io/covid-tracker)
+[Link to Live Demo](https://okino-covid-tracker.netlify.app)
 
 ## 🧰 Tools
 
