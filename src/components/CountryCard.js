@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const CountryCard = ({ country }) => (
   <li className="card-country__li">
@@ -14,5 +14,15 @@ const CountryCard = ({ country }) => (
     </NavLink>
   </li>
 );
+
+CountryCard.propTypes = {
+  country: PropTypes.shape({
+    country: PropTypes.string.isRequired,
+    countryInfo: PropTypes.shape({
+      flag: PropTypes.string,
+    }),
+    cases: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default CountryCard;

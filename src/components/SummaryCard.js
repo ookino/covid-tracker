@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import globe from '../assets/globe.svg';
 
 const SummaryCard = ({ summary }) => (
@@ -17,5 +17,13 @@ const SummaryCard = ({ summary }) => (
     </div>
   </div>
 );
+
+SummaryCard.propTypes = {
+  summary: PropTypes.shape({
+    cases: PropTypes.string.isRequired,
+    recovered: PropTypes.string.isRequired,
+    deaths: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default SummaryCard;

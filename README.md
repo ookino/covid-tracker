@@ -21,6 +21,10 @@
 - React
 - Redux
 
+## 🎥 Video Demo
+
+[Link to Video Demo](https://www.loom.com/share/1f4d15f59d9e475ca28d3f21ee46d752)
+
 ## 📡 Live Demo
 
 [Link to Live Demo](https://okino-covid-tracker.netlify.app)

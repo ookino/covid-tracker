@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const CountryDetails = ({ country }) => (
   <ul className="details__ul">
@@ -29,4 +28,15 @@ const CountryDetails = ({ country }) => (
     </li>
   </ul>
 );
+
+CountryDetails.propTypes = {
+  country: PropTypes.shape({
+    continent: PropTypes.string.isRequired,
+    population: PropTypes.string.isRequired,
+    cases: PropTypes.string.isRequired,
+    critical: PropTypes.string.isRequired,
+    recovered: PropTypes.string.isRequired,
+    deaths: PropTypes.string.isRequired,
+  }).isRequired,
+};
 export default CountryDetails;

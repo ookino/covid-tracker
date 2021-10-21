@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
 import SummaryCard from '../components/SummaryCard';
@@ -10,9 +9,9 @@ const Home = () => {
   const [state, setState] = useState(countries);
 
   const handleSearch = (e) => {
-    let filtered = [...countries].filter((country) => country.country.toLowerCase().includes(e.target.value.toLowerCase()));
-    filtered = !filtered.length ? [] : filtered;
-    setState(() => filtered);
+    let f = [...countries].filter((c) => c.country.toLowerCase().includes(e.target.value.toLowerCase()));
+    f = !f.length ? [] : f;
+    setState(() => f);
   };
 
   useEffect(() => {
