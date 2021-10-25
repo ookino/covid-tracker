@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import CountryDetails from '../components/CountryDetails';
 
@@ -22,6 +22,14 @@ const Details = ({ match }) => {
       <CountryDetails country={country} />
     </main>
   );
+};
+
+Details.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      countryName: PropTypes.string,
+    }),
+  }).isRequired,
 };
 
 export default Details;

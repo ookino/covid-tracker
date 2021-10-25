@@ -28,7 +28,6 @@ const Home = () => {
         <ul className="card-country__ul">
           {state
             && state.map((country) => (
-              // eslint-disable-next-line no-underscore-dangle
               <CountryCard key={country.country} country={country} />
             ))}
         </ul>
