@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders CountryCard Component correctly 1`] = `
+<li
+  className="card-country__li"
+>
+  <a
+    aria-current={null}
+    className="card-country__a"
+    href="/details/Nigeria"
+    onClick={[Function]}
+  >
+    <img
+      alt="country-flag"
+      className="card-country__img"
+      src="flag url"
+    />
+    <h1
+      className="card-country__h1"
+    >
+      Nigeria
+    </h1>
+    <p
+      className="card-country__p"
+    >
+      523464 cases
+    </p>
+  </a>
+</li>
+`;
